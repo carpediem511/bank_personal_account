@@ -3,19 +3,20 @@
 //import Header from "../components/header"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import Header from "../../components/navbar/header"
 
 const UserAccountPage = () => {
-	const { push } = useRouter()
+	//const { push } = useRouter()
 	//метод back - кнопка назад, replace(для авторизации) - переадресовывает и очищает историю, кнопка назад в браузере не будет работать
 	//хук usePathname - получить текущий адрес, где есть пользователь - для подсветки активного элемента
 	//хук useSearchParams - получить параметры из адреса, например при поиске на сайте
 	//хук useParams  - использовать слаг и получать информацию
-	push('/product/product1')
+	//push('/product/product1')
 
 	return (
 		<>
 			<p>user</p>
-			{/*	<Header />*/}
+			<Header />
 			<Image src='/logotip.png' alt="logo" width={200} height={200} />
 
 		</>

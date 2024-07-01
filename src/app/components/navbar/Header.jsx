@@ -1,7 +1,9 @@
+import styles from './Header.module.css'
+
 const Header = () => {
 	return (
 		<>
-			<header className="p-4 dark:bg-gray-100 dark:text-gray-800">
+			<header className={styles.header}>
 				<div className="container flex justify-between h-16 mx-auto">
 					<img src="/logotip.png" className="flex items-center p-2 w-28 h-28"></img>
 					<h2 className="text-2xl font-semibold text-center">Здравствуйте, </h2>

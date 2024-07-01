@@ -1,7 +1,7 @@
-import { Montserrat_Alternates } from "next/font/google";
+import { Golos_Text } from "next/font/google";
 import "./globals.css";
 
-const font = Montserrat_Alternates({
+const font = Golos_Text({
 	subsets: ["latin"], weight: ['400', '500', '600', '700']
 }); //здесь поменять для шрифта
 //основные данные
@@ -40,7 +40,10 @@ async function fetchData(id) {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={font.className}>{children}</body>
+			<body className={font.className}>
+
+				{children}
+			</body>
 		</html>
 	);
 }
